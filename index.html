@@ -1,0 +1,159 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>
+      Transmission
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="alternate" href="/wiki/WikiStart?format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="/chrome/common/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/favicon.ico" type="image/x-icon" />
+    <style id="trac-noscript" type="text/css">.trac-noscript { display: none !important }</style>
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search Transmission" />
+      <script type="text/javascript" charset="utf-8" src="/chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="/chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="/chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="/chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="/chrome/common/js/folding.js"></script>
+    <script type="text/javascript">
+      jQuery("#trac-noscript").remove();
+      jQuery(document).ready(function($) {
+        $(".trac-autofocus").focus();
+        $(".trac-target-new").attr("target", "_blank");
+        setTimeout(function() { $(".trac-scroll").scrollToTop() }, 1);
+        $(".trac-disable-on-submit").disableOnSubmit();
+      });
+    </script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://www.transmissionbt.com/"><img src="https://trac.transmissionbt.com/logo.png" alt="Trac" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li><a href="/prefs">Preferences</a></li><li class="last"><a href="/register">Register</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="/wiki">wiki:</a><a class="pathentry" href="/wiki/WikiStart" title="View WikiStart">WikiStart</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="/wiki/WikiStart">Start Page</a></li><li><a href="/wiki/TitleIndex">Index</a></li><li class="last"><a href="/wiki/WikiStart?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><h1 id="TransmissionSupportandDevelopment">Transmission Support and Development</h1>
+<h1 id="a1.GeneralHelp">1. General Help</h1>
+<p>
+New to Transmission?
+</p>
+<ul><li>Try the Help in Transmission's "Help" menu.
+</li><li>simplehelp.net has an introduction for <a class="ext-link" href="http://www.simplehelp.net/2008/07/17/how-to-use-transmission-as-your-bittorrent-client-os-x/"><span class="icon">​</span>Transmission on Macs</a>.
+</li><li>Jun Azua has an introduction for <a class="ext-link" href="http://www.junauza.com/2009/01/how-to-use-bittorrent-in-linux.html"><span class="icon">​</span>Transmission GUI on Linux</a>.
+</li><li>Running Transmission <a class="wiki" href="/wiki/HeadlessUsage">without a GUI</a>
+</li><li>Using Transmission <a class="wiki" href="/wiki/WebInterface">from a web browser</a>
+</li><li>Also see our <a class="wiki" href="/wiki/FrequentlyAskedQuestions">Frequently Asked Questions</a>.
+</li></ul><p>
+Want to learn more?
+</p>
+<ul><li>Visit our <a class="ext-link" href="https://forum.transmissionbt.com/"><span class="icon">​</span>forums</a>
+</li><li>Visit our <a class="ext-link" href="https://en.wikipedia.org/wiki/Irc"><span class="icon">​</span>IRC</a> channel: <a class="ext-link" href="irc://irc.freenode.net/transmission"><span class="icon">​</span>#transmission on freenode</a>
+</li><li>Follow us on <a class="ext-link" href="https://twitter.com/transmissionbt"><span class="icon">​</span>twitter</a>
+</li></ul><h1 id="a2.MoreDocumentation">2. More Documentation</h1>
+<ul><li><a class="wiki" href="/wiki/ConfigFiles">Configuration Files</a>
+</li><li><a class="wiki" href="/wiki/EditConfigFiles">Editing Configuration Files</a>
+</li><li><a class="wiki" href="/wiki/EnvironmentVariables">Environment Variables</a>
+</li><li><a class="wiki" href="/wiki/Scripts">Extending Transmission using Scripts</a>
+</li><li><a class="wiki" href="/wiki/Blocklists">Blocklists</a>
+</li><li><a class="wiki" href="/wiki/Building">How to build Transmission</a>
+</li><li><a class="wiki" href="/wiki/rpc">RPC Protocol Specification</a>
+</li><li><a class="wiki" href="/wiki/PeerId">Transmisson's Peer ID and User-Agent headers</a>
+</li><li><a class="wiki" href="/wiki/PeerStatusText">Peer Status Text explained</a>
+</li><li><a class="wiki" href="/wiki/Shark">Creating a Shark Time Trace</a>
+</li></ul><h1 id="a3.Reportaproblemrequestafeature">3. Report a problem / request a feature</h1>
+<ul><li>If you're having trouble with Transmission, check the Troubleshooting section of our <a class="wiki" href="/wiki/FrequentlyAskedQuestions">Frequently Asked Questions</a>.
+</li><li>Check whether the problem has already been reported:
+<ul><li><a href="https://trac.transmissionbt.com/report/2">All open tickets</a>
+</li><li><a href="https://trac.transmissionbt.com/search">Search</a>
+</li></ul></li><li>If you don't see a ticket matching your problem or feature, read <a class="ext-link" href="https://forum.transmissionbt.com/viewtopic.php?f=1&amp;t=3274"><span class="icon">​</span>this post</a> about what to write, then <a href="https://trac.transmissionbt.com/newticket">add a new ticket</a>.
+</li><li>If you <em>do</em> see an existing ticket, please add a comment there.  The more users interested in a ticket, the higher priority it's given.
+</li></ul><h1 id="a4.ForContributors">4. For Contributors</h1>
+<p>
+Transmission is a volunteer project and welcomes help.
+Please contact us if you are interested in supporting Transmission in any of the following ways:
+</p>
+<ul><li>Code contribution
+</li><li>Testing
+</li><li><a class="wiki" href="/wiki/Translating">Language Translations</a>
+</li><li>Bug and request management
+</li><li>Documentation and Wiki Editing
+</li><li><a class="ext-link" href="https://www.transmissionbt.com/donate.php"><span class="icon">​</span>Donations</a>
+</li><li>If you want to alert us to a security vulnerability, please email security@…
+</li></ul></div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="/wiki/WikiStart?action=diff&amp;version=68" title="Version 68 by John Clay">Last modified</a> <a class="timeline" href="/timeline?from=2016-03-07T03%3A18%3A05Z&amp;precision=second" title="See timeline at 03/07/16 03:18:05">12 days ago</a></span>
+            <span class="trac-print">Last modified on 03/07/16 03:18:05</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/wiki/WikiStart?format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="/about"><strong>Trac 1.0.10</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.com/">http://trac.edgewall.com/</a></p>
+    </div>
+  </body>
+</html>
